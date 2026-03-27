@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+header {
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #fde59d;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: auto;
+    width: 90%;
+}
+
+.menu {
+    display: flex;
+    gap: 180px;
+    font-size: 25px;
+    margin-left: 10%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #743018;
+    font-family: "Chewy", system-ui;
+}
+
+.logoimg {
+    width: 300px;
+}
+
+.linha {
+    background-color: #efc58f;
+    width: 100%;
+    height: 5px;
+}
+
+main {
+
+}
+
+/* teste com a IA, eese fico melhor */
+
+.banner {
+    position: relative;
+    height: 540px;
+    background: url("/Assets/imgfundoT1.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    margin-top: 80px;
+}
+
+/* overlay roxo */
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(106, 76, 147, 0.6); /* roxo transparente */
+}
+
+/* conteúdo fica acima do overlay */
+.conteudo {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+/* logo */
+.logo img {
+    width: 460px;
+}
+
+/* texto */
+.texto-banner {
+    color: #ffd54f;
+}
+
+.texto-banner h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 46px;
+    font-family: "Barrio", system-ui;
+    margin-right: 50px;
+}
+
+.hero {
+    margin-top: 100px;
+    
+}
+
+.title {
+    color: #743018;
+}
+
+.texto-hero {
+    color: #b16634;
+}
+
+/* .linha2 {
+    background-color: #efc58f;   
+    width: 80%;
+    margin-left: 10%;
+    height: 2px;
+} */
