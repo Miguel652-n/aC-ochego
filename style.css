@@ -58,7 +58,7 @@ main {
     display: flex;
     align-items: center;
     object-fit: cover;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 /* overlay roxo */
@@ -100,21 +100,49 @@ main {
 }
 
 .hero {
+    display: flex;
+    justify-content: center;
     margin-top: 100px;
-    
+} 
+
+.hero-container {
+    align-items: center;
+    max-width: 900px;
 }
 
-.title {
+.hero h1 {
+    font-size: 40px;
     color: #743018;
+    text-align: center;
+
 }
 
-.texto-hero {
+.hero p {
+    font-size: 20px;
     color: #b16634;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 15px;
 }
 
-/* .linha2 {
+.linha2 { 
     background-color: #efc58f;   
-    width: 80%;
-    margin-left: 10%;
+    width: 60%;
+    margin-left: 20%;
     height: 2px;
-} */
+    margin-top: 25px;
+} 
+
+.adotometro {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #72559f;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 50px;
+}
