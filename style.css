@@ -133,9 +133,13 @@ main {
     margin-top: 25px;
 } 
 
-.adotometro {
-    padding: 80px 20px;
-    text-align: center;
+.title-adotrometro {
+
+}
+
+.img-adotrometro {
+    display: flex;
+    justify-self: center;
 }
 
 footer {
