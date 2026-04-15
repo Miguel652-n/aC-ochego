@@ -166,6 +166,10 @@ main {
     gap: 5px;
 }
 
+.regioes p{
+    margin-top: 15px;
+}
+
 .pais {
     background-color: #fde59d;
     color: #743018;
@@ -178,10 +182,6 @@ main {
     outline: none;
     border: none;
     text-align: center;
-}
-
-.regioes p{
-    margin-top: 15px;
 }
 
 .grupos{
@@ -339,6 +339,16 @@ footer {
 
 /* tablet */
 @media (max-width: 916px) {
+    .intro {
+        padding: 4%;
+    }
+
+    .intro h1 {
+        max-width: 500px;
+        justify-self: center;
+        margin-bottom: 32px;
+    }
+
     .adotar {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -350,12 +360,30 @@ footer {
     .img-adotrometro-mobile {
         display: flex;
         justify-content: center;
-        height: 1200px;
+        height: 800px;
     }
 }
 
 /* mobile */
 @media (max-width: 440px) {
+    .intro {
+        padding: 4%;
+    }
+
+    .regioes {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .pais {
+        flex-wrap: wrap;
+    }
+
+    .grupos {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
     .adotar {
         grid-template-columns: 1fr;
     }
