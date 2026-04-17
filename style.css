@@ -38,6 +38,7 @@ header {
     text-decoration: none;
     color: #743018;
     font-family: "Chewy", system-ui;
+    
 }
 
 .logoimg {
@@ -245,13 +246,19 @@ main {
 }
 
 .img-wrapper img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 350px;
+    object-fit: contain;
+    margin-bottom: 16px;
 }
 
 .adotar-card h3{
     font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.adotar-card p {
+    margin-bottom: 16px;
+    font-size: 18px;
 }
 
 .location {
@@ -337,11 +344,37 @@ footer {
     margin-top: 50px;
 }
 
-/* tablet */
+/* tablet */ 
+
+/* @media (max-width: 830px){
+    .conteudo{
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .banner{
+        padding: 30px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 530px){
+    .logo img{
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .texto-banner h1{
+        text-align: center;
+        font-size: 35px;
+    }
+} */
+
 @media (max-width: 916px) {
     .intro {
         padding: 4%;
     }
+
 
     .intro h1 {
         max-width: 500px;
@@ -381,7 +414,7 @@ footer {
 
     .grupos {
         grid-template-columns: 1fr;
-        justify-items: center;
+        justify-content: center;
     }
 
     .adotar {

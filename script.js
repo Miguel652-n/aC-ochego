@@ -1,124 +1,20 @@
+function criarPet(nome, especie, genero, idade, regiao, ong, cidade, imagem) {
+  return {
+    nome,
+    especie,
+    genero,
+    idade,
+    regiao,
+    ong,
+    cidade,
+    imagem
+  };
+}
+
 const petsData = [
-  {
-    nome: "Rex",
-    especie: "cachorro",
-    genero: "macho",
-    idade: "filhote",
-    regiao: "MG",
-    ong: "Apa",
-    cidade: "Uberlândia",
-    imagem: "Assets/testepet.png"
-  },
-  {
-    nome: "Luna",
-    especie: "gato",
-    genero: "femea",
-    idade: "adulto",
-    regiao: "SP",
-    ong: "Cão Viver",
-    cidade: "São Paulo",
-    imagem: "Assets/testepet.png"
-  },
-  {
-    nome: "Rex",
-    especie: "cachorro",
-    genero: "macho",
-    idade: "filhote",
-    regiao: "MG",
-    ong: "Apa",
-    cidade: "Uberlândia",
-    imagem: "Assets/testepet.png"
-  },
-  {
-    nome: "Rex",
-    especie: "cachorro",
-    genero: "macho",
-    idade: "filhote",
-    regiao: "MG",
-    ong: "Apa",
-    cidade: "Uberlândia",
-    imagem: "Assets/testepet.png"
-  },
-  {
-    nome: "Rex",
-    especie: "cachorro",
-    genero: "macho",
-    idade: "filhote",
-    regiao: "MG",
-    ong: "Apa",
-    cidade: "Uberlândia",
-    imagem: "Assets/testepet.png"
-  },
-  {
-    nome: "Rex",
-    especie: "cachorro",
-    genero: "macho",
-    idade: "filhote",
-    regiao: "MG",
-    ong: "Apa",
-    cidade: "Uberlândia",
-    imagem: "Assets/testepet.png"
-  },
-  {
-    nome: "Rex",
-    especie: "cachorro",
-    genero: "macho",
-    idade: "filhote",
-    regiao: "MG",
-    ong: "Apa",
-    cidade: "Uberlândia",
-    imagem: "Assets/testepet.png"
-  },
-  {
-    nome: "Rex",
-    especie: "cachorro",
-    genero: "macho",
-    idade: "filhote",
-    regiao: "MG",
-    ong: "Apa",
-    cidade: "Uberlândia",
-    imagem: "Assets/testepet.png"
-  },
-  {
-    nome: "Rex",
-    especie: "cachorro",
-    genero: "macho",
-    idade: "filhote",
-    regiao: "MG",
-    ong: "Apa",
-    cidade: "Uberlândia",
-    imagem: "Assets/testepet.png"
-  },
-  {
-    nome: "Rex",
-    especie: "cachorro",
-    genero: "macho",
-    idade: "filhote",
-    regiao: "SP",
-    ong: "Apa",
-    cidade: "Uberlândia",
-    imagem: "Assets/testepet.png"
-  },
-  {
-    nome: "Rex",
-    especie: "cachorro",
-    genero: "macho",
-    idade: "filhote",
-    regiao: "RJ",
-    ong: "Apa",
-    cidade: "Uberlândia",
-    imagem: "Assets/testepet.png"
-  },
-  {
-    nome: "Rex",
-    especie: "cachorro",
-    genero: "macho",
-    idade: "filhote",
-    regiao: "RJ",
-    ong: "Apa",
-    cidade: "Uberlândia",
-    imagem: "Assets/testepet.png"
-  }
+  criarPet("Rex", "Cachorro", "macho", "filhote", "MG", "Apa", "Uberlândia", "Assets/testepet.png"),
+  criarPet("Rex", "Cachorro", "femea", "adulto", "SP", "Cão Viver", "São Paulo", "Assets/testepet.png"),
+  criarPet("Rex", "Cachorro", "macho", "adulto", "MG", "Amigo Fiel", "Niterói", "Assets/testepet.png")
 ];
 
 let quantidadeVisivel = 6;
