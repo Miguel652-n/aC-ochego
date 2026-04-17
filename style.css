@@ -3,61 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 html, body {
     overflow-x: hidden;
 }
-
-body {}
-
+ 
 header {
     padding-left: 40px;
     padding-right: 40px;
     background-color: #fde59d;
 }
-
+ 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     width: 90%;
 }
-
+ 
 .menu {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 600px;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 30px;
+    gap: 12%;
 }
-
+ 
 .menu a {
     text-decoration: none;
     color: #743018;
     font-family: "Chewy", system-ui;
-    
 }
-
+ 
+.menu a:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+ 
+}
+ 
+.menu-btn {
+    display: none;
+}
+ 
 .logoimg {
     width: 300px;
+    padding-left: 5%;
+   
 }
-
+ 
 .linha {
     background-color: #efc58f;
     width: 100%;
     height: 5px;
 }
-
+ 
 main {
     font-family: Arial, Helvetica, sans-serif;
     color: #743018;
 }
-
+ 
 /* teste com a IA, esse fico melhor */
-
+ 
 .banner {
     position: relative;
     height: 540px;
@@ -67,7 +77,13 @@ main {
     object-fit: cover;
     margin-top: 100px;
 }
-
+ 
+.logo{
+    padding: 4%;
+    object-fit: contain;
+ 
+}
+ 
 /* overlay roxo */
 .banner::before {
     content: "";
@@ -76,7 +92,7 @@ main {
     background: rgba(106, 76, 147, 0.6);
     /* roxo transparente */
 }
-
+ 
 /* conteúdo fica acima do overlay */
 .conteudo {
     position: relative;
@@ -87,43 +103,39 @@ main {
     align-items: center;
     padding: 0 20px;
 }
-
-/* logo */
-.logoimg {
-    max-width: 100%;
-    height: auto;
-}
-
+ 
 /* texto */
 .texto-banner {
     color: #ffd54f;
 }
-
+ 
 .texto-banner h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-size: 46px;
+    font-size: 6vh;
     font-family: "Barrio", system-ui;
     margin-right: 50px;
+    width: 300px;
 }
-
+ 
 .intro {
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    padding: 4%;
 }
-
+ 
 .intro-container {
     align-items: center;
     max-width: 900px;
 }
-
+ 
 .intro h1 {
     font-size: 40px;
     text-align: center;
 }
-
+ 
 .intro p {
     font-size: 20px;
     color: #b16634;
@@ -131,7 +143,7 @@ main {
     line-height: 1.4;
     margin-top: 15px;
 }
-
+ 
 .linha2 {
     background-color: #ffeae0;
     width: 80%;
@@ -139,12 +151,12 @@ main {
     height: 2px;
     margin-top: 25px;
 }
-
+ 
 .hero {
     display: grid;
     color: black;
 }
-
+ 
 .title-hero{
     display: flex;
     justify-content: center;
@@ -152,26 +164,22 @@ main {
     font-size: 40px;
     color: black;
 }
-
+ 
 .hero-container {
     margin-left: 8%;
 }
-
+ 
 .h2-container {
     font-size: 32px;
 }
-
+ 
 .regioes {
     display: flex;
     flex-wrap: nowrap;
     gap: 5px;
 }
-
-.regioes p{
-    margin-top: 15px;
-}
-
-.pais {
+ 
+.estados {
     background-color: #fde59d;
     color: #743018;
     border-radius: 20px;
@@ -184,31 +192,35 @@ main {
     border: none;
     text-align: center;
 }
-
+ 
+.regioes p{
+    margin-top: 15px;
+}
+ 
 .grupos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 18px;
 }
-
+ 
 .grid-2 div{
     gap: 15px;
     width: 115px;
     margin: 5px;
 }
-
+ 
 #grid-2{
     gap: 15px;
     width: 90px;
     margin: 5px;
 }
-
+ 
 .grid-3 div{
     gap: 15px;
     width: 80px;
     margin: 5px;
 }
-
+ 
 .linha3 {
     background-color: #d4c2ef;
     width: 20%;
@@ -217,21 +229,19 @@ main {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-.title-adocao {}
-
+ 
 .title-adocao h2 {
     margin-top: 60px;
     margin-left: 8%;
     font-size: 36px;
     color: #72559f;
 }
-
+ 
 .title-adocao p {
     margin-left: 8%;
     font-size: 18px;
 }
-
+ 
 .adotar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -240,32 +250,26 @@ main {
     text-align: center;
     margin-top: 50px;
 }
-
+ 
 .adotar-card {
     margin-bottom: 38px;
 }
-
+ 
 .img-wrapper img {
-    height: 350px;
-    object-fit: contain;
-    margin-bottom: 16px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
-
+ 
 .adotar-card h3{
     font-size: 24px;
-    margin-bottom: 10px;
 }
-
-.adotar-card p {
-    margin-bottom: 16px;
-    font-size: 18px;
-}
-
+ 
 .location {
     font-size: 14px;
     margin-bottom: 10px;
 }
-
+ 
 #verMais {
     background-color: #efc58f;
     border: none;
@@ -278,19 +282,19 @@ main {
     display: flex;
     justify-self: center;
 }
-
+ 
 /* efeito */
 #verMais:hover {
     transform: scale(1.05);
 }
-
+ 
 /* colocar as img dps */
-
+ 
 .name {
     margin: 10px 0;
     font-size: 18px;
 }
-
+ 
 button {
     background-color: #efc58f;
     border: none;
@@ -300,7 +304,7 @@ button {
     font-weight: bold;
     cursor: pointer;
 }
-
+ 
 .linha2 {
     background-color: #ffeae0;
     width: 80%;
@@ -308,33 +312,33 @@ button {
     height: 3px;
     margin-top: 25px;
 }
-
+ 
 .title-adotrometro {
     margin-top: 50px;
     margin-left: 10%;
 }
-
+ 
 .title-adotrometro {
     width: 300px;
     max-width: 100%;
     height: auto;
 }
-
+ 
 .img-adotrometro {
     display: flex;
     justify-content: center;
     padding: 20px;
 }
-
+ 
 .img-adotrometro img {
     max-width: 100%;
     height: auto;
 }
-
+ 
 .img-adotrometro-mobile {
     display: none;
 }
-
+ 
 footer {
     background-color: #72559f;
     color: white;
@@ -343,88 +347,170 @@ footer {
     padding: 20px;
     margin-top: 50px;
 }
-
-/* tablet */ 
-
-/* @media (max-width: 830px){
-    .conteudo{
-        gap: 30px;
-        flex-direction: column-reverse;
+ 
+@media(max-width: 1420px){
+    .banner {
+        background:none;
     }
-
-    .banner{
-        padding: 30px;
-        height: 100%;
+   
+    .menu {
+        display: none;
     }
+ 
+    .btn-sandwich {
+        max-width: 140px;
+    }
+ 
+    .menu-btn {
+       display: flex;
+       font-size: 60px;
+       background-color: transparent;
+       color: #743018;
+       margin-left: 80px;
+    }
+ 
+     .texto-banner h1 {
+        font-size: clamp(32px, 6vw, 40px);
+    }
+ 
 }
-
-@media (max-width: 530px){
-    .logo img{
-        height: 200px;
-        object-fit: contain;
+ 
+@media (max-width: 900px) {
+ 
+    .banner img {
+        width: 380px;
     }
-
-    .texto-banner h1{
+ 
+    .conteudo {
+        flex-wrap: nowrap;
+    }
+ 
+    .texto-banner h1 {
+        width: 300px;
+        gap: 8px;
+    }
+ 
+}
+ 
+/* tablet */
+@media (max-width: 768px) {
+   
+    .menu {
+        display: none;
+    }
+ 
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        font-size: 35px;
+        justify-content: center;
+        gap: 30px;
     }
-} */
-
-@media (max-width: 916px) {
-    .intro {
-        padding: 4%;
+ 
+    .banner img {
+        width: 300px;
     }
-
-
+ 
+    .texto-banner{
+        display: block;
+        text-align: center;
+    }
+ 
+    .texto-banner h1 {
+        font-size: clamp(20px, 6vw, 28px);
+        align-items: center;
+        margin-right: 0;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+ 
     .intro h1 {
         max-width: 500px;
         justify-self: center;
         margin-bottom: 32px;
     }
-
+ 
     .adotar {
         grid-template-columns: repeat(2, 1fr);
     }
-
+ 
     .img-adotrometro {
         display: none;
     }
-
+ 
     .img-adotrometro-mobile {
         display: flex;
         justify-content: center;
-        height: 800px;
+        height: 1200px;
     }
 }
-
+ 
 /* mobile */
 @media (max-width: 440px) {
+ 
+    .menu {
+        display: none;
+    }
+ 
+    .logoimg{
+        width: 240px;
+        padding-left: 0;
+        padding-right: 20%;
+    }
+ 
+    .menu-btn{
+        margin: 0;
+    }
+ 
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+    }
+ 
+    .banner img {
+        width: 260px;
+    }
+ 
+    .texto-banner{
+        display: block;
+        text-align: center;
+    }
+ 
+    .texto-banner h1 {
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+ 
     .intro {
         padding: 4%;
     }
-
+ 
     .regioes {
         flex-wrap: wrap;
         margin-bottom: 20px;
     }
-
-    .pais {
+ 
+    .estados {
         flex-wrap: wrap;
     }
-
+ 
     .grupos {
         grid-template-columns: 1fr;
         justify-content: center;
     }
-
+ 
     .adotar {
         grid-template-columns: 1fr;
     }
-
+ 
     .title-adotrometro img {
         width: 220px;
     }
-
+ 
     .img-adotrometro-mobile img {
         width: 300px;
         height: 800px;

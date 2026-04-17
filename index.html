@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Chewy&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,167 +18,168 @@
   <body>
     <!-- header -->
     <header>
-
+ 
       <div class="header-container">
-
+ 
         <nav class="menu">
-
+ 
           <a href="#">Inicio</a>
           <a href="ONGs.html">ONGs</a>
           <a href="#">Como ajudar</a>
           <a href="#">Adoção</a>
-
+ 
         </nav>
-
+ 
         <div>
           <img src="/Assets/teste1.png" alt="" class="logoimg"/>
         </div>
-
+ 
+        <div class="btn-sandwich">
+          <button class="menu-btn" onclick="toggleMenu()"><i class="bi bi-list"></i></button>
+        </div>
+ 
       </div>
-
+ 
     </header>
     <!-- header -->
         <div class="linha"></div>
-
+ 
         <main>
           <!-- parte que tem o cachorro de fundo -->
             <section class="banner">
-
+ 
                 <div class="conteudo">
-
+ 
                     <div class="logo">
                         <img src="/Assets/logo.png" alt="Logo" />
                     </div>
-
+ 
                     <div class="texto-banner">
-
-                        <h1>
-                        <span>ONDE</span> CADA PATA
-                        <span>ENCONTRA</span> UM LAR
-                        </h1>
-
+ 
+                        <h1>ONDE CADA PATA ENCONTRA UM LAR</h1>
+ 
                     </div>
-
+ 
                 </div>
             </section>
             <!-- final do cachorro -->
              <!-- parte do texto -->
             <section class="intro">
-
+ 
                 <div class="intro-container">
-
+ 
                     <h1>Seja bem vindo ao instituto aCãochego </h1>
                     <p>Fundado em fevereiro de 2018, a partir da união de um grupo de pessoas em prol do propósito de cuidar bem e adoção de cada animal, o Instituto aCãochego atua principalmente na divulgação de organizações que estão precisando de apoio e auxilio na adoção de animais.</p>
                     <p>Hoje, são mais de 2.000 finais felizes e milhares de sorrisos acumulados, de famílias que não faziam ideia o que estava por trás daquele rabo desengonçado que abanava sem parar, daquele peludo maior do que achavam que o apartamento comportava, daquela carinha VIRA-LATA e do maravilhoso caso de amor, generosidade, gratidão, companheirismo e fidelidade que começava naquela adoção, mais digno recomeço para aqueles que um dia já sofreram muito com a indiferença dos humanos.</p>
                 </div>
-
+ 
             </section>
-
+ 
             <div class="linha2"></div>
             <!-- parte do formulario de adoção -->
             <section class="hero">
-
+ 
               <h1 class="title-hero">Adoção</h1>
-
+ 
               <div class="linha3"></div>
-
+ 
               <section class="hero-container">
-
+ 
                 <h2 class="h2-container">Filtros</h2>
-
+ 
                 <form action="">
-
+ 
                   <div class="regioes">
-                    <p>Escolha a região de preferência:</p><select name="" id="" class="pais">
-                      <option>Selecio um país</option>
+                    <p>Escolha a região de preferência:</p><select name="" id="" class="estados">
+                      <option>Selecione um Estado</option>
                       <option value="MG">Minas Gerais</option>
                       <option value="RJ">Rio de Janeiro</option>
                       <option value="SP">São Paulo</option>
                       <option value="ES">Espirito Santo</option>
                     </select>
-                    
+                   
                   </div>
-
+ 
                   <div class="grupos">
-
+ 
                     <div class="grid-2">
                       <h2>Espécie</h2>
-
+ 
                       <div>
-
+ 
                         <input type="radio" name="especie" value="cachorro" id="dogs">
                         <label for="dogs">Cachorros</label>
-  
+ 
                         <input type="radio" name="especie" value="gato" id="cats">
                         <label for="cats">Gatos</label>
                       </div>
                     </div>
-
+ 
                     <div class="grid-2">
                       <h2>Gênero</h2>
-
+ 
                       <div id="grid-2">
                         <input type="radio" name="genero" value="macho" id="macho">
                         <label for="macho">Macho</label>
-  
+ 
                         <input type="radio" name="genero" value="femea" id="femea">
                         <label for="femea">Fêmea</label>
                       </div>
                     </div>
-
+ 
                     <div class="grid-3">
                       <h2>Idade</h2>
-
+ 
                       <div>
                         <input type="checkbox" name="idade" value="filhote" id="filhote">
                         <label for="filhote">Filhote</label>
-  
+ 
                         <input type="checkbox" name="idade" value="adulto" id="adulto">
                         <label for="adulto">Adulto</label>
-  
+ 
                         <input type="checkbox" name="idade" value="idoso" id="idoso">
                         <label for="idoso">Idoso</label>
-
+ 
                       </div>
-
+ 
                     </div>
-
+ 
                   <div>
-
+ 
                 </form>
-
+ 
               </section>
               <!-- final do furmulario -->
               <!-- parte dos pets para adoção -->
               <div class="title-adocao">
-
+ 
                 <h2>Pets para adoção:</h2>
                 <p>Em Minas Gerais</p>
-
+ 
               </div>
               <!-- parte das img dos cachorro e gato, tem q te js -->
               <section class="adotar">
                 <!-- isso e tarefa do js -->
               </section>
-
+ 
               <button id="verMais">Ver Mais</button>
-
+ 
             </section>
-
+ 
             <div class="linha2"></div>
-
+ 
             <section class="title-adotrometro">
                 <img src="Assets/titleado.png" alt="title-desktop">
             </section>
-
+ 
             <section class="img-adotrometro">
               <img src="Assets/adotometro.png" alt="img-desktop">
             </section>
-
+ 
             <section class="img-adotrometro-mobile">
               <img src="Assets/adotrometro-mobile.png" alt="">
             </section>
-
+ 
         </main>
         <footer>
             <p>&copy; 2023 aCãochego. Todos os direitos reservados.</p>
