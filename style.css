@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
     width: 90%;
 }
@@ -122,7 +122,6 @@ main {
 .intro {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
     padding: 4%;
 }
  
@@ -132,12 +131,12 @@ main {
 }
  
 .intro h1 {
-    font-size: 40px;
+    font-size: 46px;
     text-align: center;
 }
  
 .intro p {
-    font-size: 20px;
+    font-size: 22px;
     color: #b16634;
     text-align: center;
     line-height: 1.4;
@@ -149,7 +148,6 @@ main {
     width: 80%;
     margin-left: 10%;
     height: 2px;
-    margin-top: 25px;
 }
  
 .hero {
@@ -179,45 +177,48 @@ main {
     gap: 5px;
 }
  
+.regioes p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+ 
 .estados {
     background-color: #fde59d;
     color: #743018;
     border-radius: 20px;
     padding: 5px;
     margin-bottom: 15px;
-    width: 180px;
+    width: 260px;
     height: 50px;
     border-radius: 140px;
     outline: none;
     border: none;
     text-align: center;
-}
- 
-.regioes p{
-    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
 }
  
 .grupos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: 18px;
+    font-size: 24px;
 }
  
 .grid-2 div{
     gap: 15px;
-    width: 115px;
+    width: 135px;
     margin: 5px;
 }
  
 #grid-2{
     gap: 15px;
-    width: 90px;
+    width: 110px;
     margin: 5px;
 }
  
 .grid-3 div{
     gap: 15px;
-    width: 80px;
+    width: 95px;
     margin: 5px;
 }
  
@@ -239,16 +240,16 @@ main {
  
 .title-adocao p {
     margin-left: 8%;
-    font-size: 18px;
+    font-size: 24px;
 }
  
 .adotar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    padding: 40px;
+    padding: 6%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
  
 .adotar-card {
@@ -259,15 +260,29 @@ main {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    object-fit: contain;
+    height: 400px;
 }
  
 .adotar-card h3{
+    font-size: 32px;
+}
+
+.adotar-card p {
     font-size: 24px;
+    margin-top: 6px;
 }
  
-.location {
-    font-size: 14px;
-    margin-bottom: 10px;
+button {
+    background-color: #efc58f;
+    border: none;
+    transition: 0.3s;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
 }
  
 #verMais {
@@ -282,27 +297,14 @@ main {
     display: flex;
     justify-self: center;
 }
- 
-/* efeito */
+
 #verMais:hover {
     transform: scale(1.05);
 }
- 
-/* colocar as img dps */
- 
+
 .name {
     margin: 10px 0;
     font-size: 18px;
-}
- 
-button {
-    background-color: #efc58f;
-    border: none;
-    transition: 0.3s;
-    padding: 15px 40px;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
 }
  
 .linha2 {
@@ -390,6 +392,10 @@ footer {
         gap: 8px;
     }
  
+    .adotar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
 }
  
 /* tablet */
@@ -428,10 +434,6 @@ footer {
         max-width: 500px;
         justify-self: center;
         margin-bottom: 32px;
-    }
- 
-    .adotar {
-        grid-template-columns: repeat(2, 1fr);
     }
  
     .img-adotrometro {
@@ -514,5 +516,9 @@ footer {
     .img-adotrometro-mobile img {
         width: 300px;
         height: 800px;
+    }
+
+    .estados {
+        font-size: 14px;
     }
 }
