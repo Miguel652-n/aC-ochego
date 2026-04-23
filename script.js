@@ -29,7 +29,7 @@ const petsData = [
     criarPet("Luna", "cachorro", "femea", "Filhote", "MG", "Apa", "Uberlândia", "Assets/Doguinhos/Femeas/Luna_F.png"),
     criarPet("Fred", "cachorro", "macho", "Filhote", "MG", "Apa", "Uberlândia", "Assets/Doguinhos/Machos/Fred_F.png"),
     criarPet("Malu", "cachorro", "femea", "Filhote", "MG", "Apa", "Uberlândia", "Assets/Doguinhos/Femeas/Malu_F.png"),
-    criarPet("Hamelet", "cachorro", "macho", "Filhote", "MG", "Apa", "Uberlândia", "Assets/Doguinhos/Machos/Hamelet_F.png"),
+    criarPet("Hamlet", "cachorro", "macho", "Filhote", "MG", "Apa", "Uberlândia", "Assets/Doguinhos/Machos/Hamelet_F.png"),
     criarPet("Mel", "cachorro", "femea", "Adulto", "MG", "Apa", "Uberlândia", "Assets/Doguinhos/Femeas/Mel_A.png"),
     criarPet("Kratus", "cachorro", "macho", "Adulto", "MG", "Apa", "Uberlândia", "Assets/Doguinhos/Machos/Kratus_A.png"),
     criarPet("Panqueca", "cachorro", "femea", "Adulto", "MG", "Apa", "Uberlândia", "Assets/Doguinhos/Femeas/Panqueca_A.png"),
@@ -39,7 +39,7 @@ const petsData = [
     criarPet("Zoe", "cachorro", "femea", "Filhote", "MG", "Apa", "Uberlândia", "Assets/Doguinhos/Femeas/Zoe_F.png"),
     criarPet("Zeus", "cachorro", "macho", "Filhote", "MG", "Apa", "Uberlândia", "Assets/Doguinhos/Machos/Zeus_F.png"),
     // trocaR a cor da estrelinha da pacoca
-    criarPet("Paçoca", "cachorro", "femea", "Adulto", "MG", "Apa", "Uberlândia", "Assets/Doguinhos/Femeas/Paçoca-A.png"),
+    criarPet("Paçoca", "cachorro", "femea", "Adulto", "MG", "Apa", "Uberlândia", "Assets/Doguinhos/Femeas/Paçoca_A.png"),
     // gatos  
     criarPet("Cookie", "gato", "macho", "Filhote", "MG", "Apa", "Uberlândia", "Assets/Miaus/Machos/Cookie_F.png"),
     criarPet("Café", "gato", "femea", "Adulto", "MG", "Apa", "Uberlândia", "Assets/Miaus/Femeas/Cafe_A.png"),
@@ -109,7 +109,7 @@ function aplicarFiltro() {
     listaFiltrada = petsData.filter(pet => {
         if (especie && pet.especie !== especie) return false;
         if (genero && pet.genero !== genero) return false;
-        if (idades.length > 0 && !idades.includes(pet.idade)) return false;
+        if (idades.length > 0 && !idades.map(i => i.toLowerCase()).includes(pet.idade.toLowerCase())) return false;
         if (regiao && pet.regiao !== regiao) return false;
 
         return true;

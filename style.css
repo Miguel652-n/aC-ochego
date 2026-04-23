@@ -257,11 +257,9 @@ main {
 }
  
 .img-wrapper img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+    width: 100%; 
     object-fit: contain;
-    height: 400px;
+    height: 360px;
 }
  
 .adotar-card h3{
@@ -376,7 +374,7 @@ footer {
     }
  
 }
- 
+
 @media (max-width: 900px) {
  
     .banner img {
