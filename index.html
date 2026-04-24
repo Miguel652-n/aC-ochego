@@ -22,24 +22,38 @@
       <div class="header-container">
  
         <nav class="menu">
- 
-          <a href="#">Inicio</a>
-          <a href="ONGs.html">ONGs</a>
-          <a href="#">Como ajudar</a>
-          <a href="#">Adoção</a>
- 
+          
+            <a href="#btn-menu">Inicio</a>
+            <a href="#adocao">Adotar</a>
+            <a href="ONGs.html">Como ajudar</a>
+            <a href="ONGs.html">ONGs</a>
+          
         </nav>
  
         <div>
           <img src="/Assets/teste1.png" alt="" class="logoimg"/>
         </div>
  
-        <div class="btn-sandwich">
-          <button class="menu-btn" onclick="toggleMenu()"><i class="bi bi-list"></i></button>
+        <div class="btn-abrir-menu" id="btn-menu">
+          <i class="bi bi-list"></i>
         </div>
- 
+
+        <div class="menu-mobile" id="menu-mobile">
+          <button class="menu-btn" onclick="toggleMenu()"></button>
+          <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+          </div>
+
+          <nav>
+              <a href="#btn-menu">Inicio</a>
+              <a href="#adocao">Adotar</a>
+              <a href="ONGs.html">Como ajudar</a>
+              <a href="ONGs.html">ONGs</a>
+          </nav>
+        </div>
+         <div class="overlay-menu" id="overlay-menu"></div>
       </div>
- 
+
     </header>
     <!-- header -->
         <div class="linha"></div>
@@ -75,7 +89,7 @@
  
             </section>
  
-            <div class="linha2"></div>
+            <div class="linha2" id="adocao"></div>
             <!-- parte do formulario de adoção -->
             <section class="hero">
  
@@ -96,7 +110,7 @@
                       <option value="MG">Minas Gerais</option>
                       <option value="RJ">Rio de Janeiro</option>
                       <option value="SP">São Paulo</option>
-                      <option value="ES">Espirito Santo</option>
+                      <option value="GO">Goiás</option>
                     </select>
                    
                   </div>

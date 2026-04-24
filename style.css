@@ -49,6 +49,79 @@ header {
     display: none;
 }
  
+/*MENU MOBILE*/
+
+.menu-mobile{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(242, 227, 255);
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width:  0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.overlay-menu{
+    background-color: #00000056;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+.btn-abrir-menu i {
+    color: #743018;
+    font-size: 50px;
+    display: none;
+}
+
+.menu-mobile.abrir-menu {
+     width: 50%;
+    
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #72559f;
+    font-size: 40px;
+    padding: 20px 4%;
+
+}
+
+.menu-mobile nav{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 35px;
+    text-align: right;
+}
+
+.menu-mobile nav a {
+    color: #743018;
+    font-size: 25px;
+    font-weight: 300; 
+    text-decoration: none;
+
+}
+
+.menu-mobile nav a:hover{
+    transition: ease 0.8s;
+    padding: 15px;
+    background-color: #d4c2ef;
+}
+
+
 .logoimg {
     width: 300px;
     padding-left: 5%;
@@ -361,14 +434,9 @@ footer {
         max-width: 140px;
     }
  
-    .menu-btn {
-       display: flex;
-       font-size: 60px;
-       background-color: transparent;
-       color: #743018;
-       margin-left: 80px;
+    .btn-abrir-menu i {
+        display: flex;
     }
- 
      .texto-banner h1 {
         font-size: clamp(32px, 6vw, 40px);
     }
