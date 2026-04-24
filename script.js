@@ -89,7 +89,6 @@ function renderPets() {
         `;
     });
 
-    // esconder botão se acabar
     const botao = document.getElementById("verMais");
     if (quantidadeVisivel >= listaFiltrada.length) {
         botao.style.display = "none";
