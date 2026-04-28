@@ -83,7 +83,7 @@ function renderPets() {
 
                 <p>${pet.nome}</p>
 
-                <button>Adotar</button>
+                <button><a href="formulario.html">Adotar</a></button>
             </article>
         `;
     });

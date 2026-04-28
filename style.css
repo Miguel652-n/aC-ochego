@@ -355,6 +355,11 @@ button {
     margin-top: 10px;
     font-size: 18px;
 }
+
+button a {
+    text-decoration: none;
+    color: black;
+}
  
 #verMais {
     background-color: #efc58f;
@@ -464,7 +469,6 @@ footer {
  
 }
  
-/* tablet */
 @media (max-width: 768px) {
    
     .menu {

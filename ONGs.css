@@ -205,7 +205,7 @@ select {
     border: none;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    width: 60%;
+    width: 80%;
 }
 
 .textomain{
@@ -225,9 +225,10 @@ select {
 }
  
 .img-wrapper img {
-    width: 100%;
+    max-width: 300px;
     object-fit: contain;
     height: 360px; 
+    border-radius: 30px;
 }
  
 .ONGs-card h3{
@@ -284,6 +285,9 @@ footer {
         display: none;
     }
     
+    select{
+        font-size: 20px;
+    }
      
     .btn-sandwich {
         max-width: 140px;
@@ -296,23 +300,56 @@ footer {
      .texto-banner h1 {
         font-size: clamp(32px, 6vw, 40px);
     }
- 
-}
-
-@media (max-width: 1322px) {
+    
     .ONGs {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
-@media (max-width: 884px) {
+@media (max-width: 900px) {
+   select{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
     .ONGs {
         grid-template-columns: 1fr;
     }
 
     .img-wrapper img {
-    width: 100%;
-    object-fit: contain;
-    height: 300px; 
+        width: 100%;
+        object-fit: contain;
+        height: 300px; 
+    }
+
+    select{
+        font-size: 12px;
+    }
 }
+
+@media (max-width: 710px) {
+   .ajuda-card{
+        display: grid;
+        grid-template-columns: 1fr ;
+   }
+
+}
+
+@media (max-width: 440px){
+    .logoimg{
+        width: 240px;
+        padding-left: 0;
+        padding-right: 20%;
+    }
+    
+    .texto-ajuda{
+        width: 300px;
+    }
+
+    select{
+        font-size: 10px;
+    }
 }
