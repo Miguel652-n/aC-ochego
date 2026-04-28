@@ -141,25 +141,26 @@ body{
 }
 
 main{
-    width: 800px;
-    background-color: #c5cced;
-    border: 2px solid #9fa9d4;
     margin-top: 75px;
 }
 
-.titulo{
+#form{
     display: grid;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 30px;
+    width: 800px;
+    background-color: #c5cced;
+    border: 2px solid #9fa9d4;
+}
+
+.titulo{
+    display: flex;
     justify-content: center;
     margin-top: 25px;
     font-family: sans-serif;
 }
 
-form{
-    display: grid;
-    justify-content: center;
-    margin-top: 5px;
-    padding: 30px;
-}
 
 label{
     display: block;
@@ -168,25 +169,24 @@ label{
 
 input, select{
     padding: 12px;
-   
     border: 1px solid #8f98bc;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
+    color: black;
     outline: none;
 }
 
 .sect-adress{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
-.info-pessoais{
+.info-p{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 textarea{
@@ -201,6 +201,8 @@ textarea{
     outline: none;
 }
 
+
+
 .btn-proximo{
     width: 120px;
     padding: 10px;
@@ -209,6 +211,7 @@ textarea{
     border: none;
     color: white;
     border-radius: 25px;
+    margin-top: 30px;
 }
 
 footer {
